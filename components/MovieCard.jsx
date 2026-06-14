@@ -1,9 +1,6 @@
 'use client'
 
-/**
- * MovieCard Component
- * CLIENT COMPONENT - Handles favorite toggle and modal trigger
- */
+
 
 import { useState } from 'react'
 import MovieModal from './MovieModal'
