@@ -1,9 +1,5 @@
 'use client'
 
-/**
- * Error Boundary Component
- * CLIENT COMPONENT - Handles errors in app
- */
 
 import { useEffect } from 'react'
 
