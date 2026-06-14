@@ -1,7 +1,3 @@
-/**
- * Not Found Page
- * SERVER COMPONENT - Handles 404 errors
- */
 
 import Link from 'next/link'
 
