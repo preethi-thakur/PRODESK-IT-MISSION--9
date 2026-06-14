@@ -1,9 +1,5 @@
 'use client'
 
-/**
- * MovieModal Component
- * CLIENT COMPONENT - Displays detailed movie information in a modal
- */
 
 import { getImageUrl } from '@/lib/omdb'
 
