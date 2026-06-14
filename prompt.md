@@ -1,41 +1,41 @@
-# AI Prompts Used During Development
+# prompts used during devlopment 
 
-1. Analyze my React + Vite Movie Explorer project and suggest improvements for code structure and maintainability.
+1. I have built a movie browsing application in React. Explain how I can improve its structure and make the code easier to maintain.
 
-2. Explain how to migrate a React + Vite application to Next.js 15 using the App Router.
+2. Guide me through migrating my existing React + Vite project to Next.js 15 while keeping all current features intact.
 
-3. Convert my React Router DOM routes into Next.js file-based routing.
+3. Help me understand how file-based routing works in Next.js compared to React Router.
 
-4. Create a dynamic movie details page using the route `/movie/[id]`.
+4. Show me how to create a dedicated movie details page using dynamic routes in Next.js.
 
-5. Explain the difference between Client Components and Server Components in Next.js.
+5. Explain Server Components and Client Components in simple terms and help me decide where to use each.
 
-6. Help me move API fetching logic from `useEffect()` to Server Components.
+6. Review my movie data fetching approach and suggest a better way using Next.js server-side capabilities.
 
-7. Generate a reusable MovieCard component using React best practices.
+7. Help me build reusable components so that my code remains clean and scalable.
 
-8. Review my OMDb API integration and suggest improvements.
+8. Explain how to securely store and use API keys in a Next.js application.
 
-9. Help me implement a favorites feature using local storage.
+9. Review my favorites feature and suggest improvements for state management and user experience.
 
-10. Explain how to organize a Next.js project using app, components, and lib folders.
+10. Help me organize my project folders following industry-standard Next.js practices.
 
-11. Review my project folder structure and identify unnecessary files after migration.
+11. Explain how metadata works in Next.js and how it can improve SEO.
 
-12. Help me configure environment variables securely in Next.js.
+12. Help me debug dependency conflicts and package installation errors during migration.
 
-13. Explain how to use `generateMetadata()` for SEO optimization.
+13. Review my Tailwind CSS configuration and help me resolve styling issues.
 
-14. Debug build errors related to Next.js, Tailwind CSS, and PostCSS configuration.
+14. Explain the differences between client-side rendering and server-side rendering with practical examples.
 
-15. Review my code and identify opportunities for component reusability.
+15. Help me optimize my application for better loading speed and performance.
 
-16. Generate a professional README file for my project.
+16. Review my code and identify areas where duplication can be reduced.
 
-17. Explain the deployment process for a Next.js application on Vercel.
+17. Help me create a professional README file suitable for GitHub and project evaluation.
 
-18. Help me optimize the application for performance and faster page loading.
+18. Explain the deployment process for a Next.js application and common deployment issues.
 
-19. Review my project for responsiveness across desktop, tablet, and mobile devices.
+19. Review my application for responsiveness and suggest improvements for mobile devices.
 
-20. Explain the key differences between my original React + Vite project and the migrated Next.js version.
+20. Compare my original React + Vite application with the final Next.js version and explain the benefits gained from the migration.
