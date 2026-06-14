@@ -1,9 +1,6 @@
 'use client'
 
-/**
- * MovieGallery Component
- * CLIENT COMPONENT - Handles infinite scroll pagination for movies
- */
+
 
 import { useEffect, useRef, useState } from 'react'
 import MovieCard from './MovieCard'
