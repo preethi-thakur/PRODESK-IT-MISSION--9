@@ -87,4 +87,4 @@ npm run start
 
 ## Author
 
-**Preethi Thakur**
+**Preethi Thakur** 
