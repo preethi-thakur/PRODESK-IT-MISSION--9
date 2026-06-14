@@ -1,14 +1,5 @@
 'use client'
 
-/**
- * Movie Detail Client Component
- * CLIENT COMPONENT - Handles interactivity on movie detail page
- * 
- * Why CLIENT:
- * - Manages favorites state
- * - Handles localStorage operations
- * - Provides interactive features (back button, favorites toggle)
- */
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -30,12 +21,10 @@ export default function MovieDetailClient({ initialMovie }) {
   const [favorites, setFavorites] = useState({})
   const [movie] = useState(initialMovie)
 
-  // Initialize favorites from localStorage
   useEffect(() => {
     setFavorites(loadStoredFavorites())
   }, [])
 
-  // Persist favorites to localStorage
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites))
   }, [favorites])
@@ -103,7 +92,7 @@ export default function MovieDetailClient({ initialMovie }) {
         </div>
 
         <div className="mt-12 p-8">
-          {/* Stats section */}
+       
           <div className="mb-8 grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl bg-slate-800 p-5">
               <p className="text-sm text-slate-400">
@@ -136,7 +125,7 @@ export default function MovieDetailClient({ initialMovie }) {
             </div>
           </div>
 
-          {/* Genre section */}
+    
           <div className="mb-8">
             <h2 className="mb-3 text-xl font-bold text-white">
               Genre
@@ -147,7 +136,6 @@ export default function MovieDetailClient({ initialMovie }) {
             </p>
           </div>
 
-          {/* Plot section */}
           <div className="mb-10">
             <h2 className="mb-3 text-xl font-bold text-white">
               Plot
@@ -159,7 +147,7 @@ export default function MovieDetailClient({ initialMovie }) {
             </p>
           </div>
 
-          {/* Favorite button */}
+
           <button
             onClick={() => toggleFavorite(movie)}
             className={`rounded-xl px-6 py-3 font-semibold transition ${
