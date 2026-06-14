@@ -1,15 +1,5 @@
 'use client'
 
-/**
- * Home Page
- * CLIENT COMPONENT - Combines server-rendered initial data with client-side interactivity
- * 
- * Why CLIENT: 
- * - Manages local state (search, favorites, activeTab)
- * - Handles localStorage for persisting favorites
- * - Needs debounced search input
- * - Implements infinite scroll pagination
- */
 
 import { useEffect, useRef, useState } from 'react'
 import Navbar from '@/components/Navbar'
@@ -41,7 +31,6 @@ export default function Home() {
 
   const debounceRef = useRef(null)
 
-  // Initialize favorites from localStorage
   useEffect(() => {
     setFavorites(loadStoredFavorites())
     setInitialized(true)
@@ -81,7 +70,7 @@ export default function Home() {
     return () => clearTimeout(debounceRef.current)
   }, [searchTerm])
 
-  // Fetch search results when query changes
+
   useEffect(() => {
     const fetchResults = async () => {
       if (!query) return
@@ -110,7 +99,7 @@ export default function Home() {
     fetchResults()
   }, [query])
 
-  // Persist favorites to localStorage
+
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites))
   }, [favorites])
