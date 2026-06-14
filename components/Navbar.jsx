@@ -1,9 +1,6 @@
 'use client'
 
-/**
- * Navbar Component
- * CLIENT COMPONENT - Handles search functionality with debounce
- */
+
 
 import { useRef } from 'react'
 
@@ -14,7 +11,6 @@ export default function Navbar({ searchTerm, onSearch, favoriteCount }) {
     const value = e.target.value
     onSearch(value)
 
-    // Debounce logic is handled by parent
   }
 
   return (
